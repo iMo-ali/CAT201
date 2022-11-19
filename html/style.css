@@ -78,7 +78,7 @@ nav{
     transition: 1s;
 }
 .row{
-    background: #087CEF;
+    background: #f4e004;
     width: 80%;
     margin: 4% auto;
     display: flex;
@@ -86,8 +86,9 @@ nav{
     align-items: center;
 }
 .col{
-    flex-basis: 25%;
+    flex-basis: 35%;
     text-align: center;
+    margin-left: 50px;
     overflow: hidden;
 }
 .col img{
@@ -99,3 +100,66 @@ nav{
 .col:hover img{
     transform:scale(1.1) ;
 }
+.dot{
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+span + span {
+    margin-left: 100px;
+}
+
+.team .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.team .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+}
+
+.team .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color:#fff;
+    padding:2rem 0;
+}
+
+.team .box-container .box h1{
+    font-size: 1rem;
+    line-height: 1.8;
+    color:#fff;
+}
+
+.team .box-container .box .member{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:var(--border);    
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+
+
