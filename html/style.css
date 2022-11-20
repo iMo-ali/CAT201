@@ -153,11 +153,10 @@ span + span {
 .footer{
     width: 100vw;
     display: block;
-
+    position: relative;
+    bottom: 0;
     padding: 70px 0;
     bottom: 0;
-    
-
     background-color: #18181a;
 }
 
