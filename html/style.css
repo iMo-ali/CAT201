@@ -64,8 +64,6 @@ nav{
 }
 
 .text-box{
-    width: 100%;
-    position: relative;
     text-align:center;
 }
 
@@ -94,6 +92,10 @@ nav{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
+}
+
+.team {
+    margin-bottom: 10vh;
 }
 
 .team .box-container{
@@ -126,12 +128,15 @@ nav{
     object-fit: cover;
 }
 
-
 .menu .box-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu .box-container a{
+    margin-bottom: 100px;
 }
 
 .menu .box-container .box{
@@ -145,22 +150,17 @@ nav{
 }
 
 .menu .box-container .box img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 footer {
     width: 100%;
-    position: relative;
+    height: 5vh;
+    position: fixed;
     bottom: 0;
     padding: 25px 0;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background-color: #18181a;
 }
 
-.inner_footer{
-    display: block;
-    margin: 0 auto;
-    width: 1100px;
-    height: 100%;
-}

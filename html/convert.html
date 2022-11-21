@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200;1,300;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header">
+    <header>
         <nav>
-            <a href="index1.html"><img src="/Images/USMlogo.png" alt="" style="width: 150px;height: 150px;padding: 25px;"></a>
+            <a href="index1.html"><img src="/Images/USMlogo.png" alt="University Logo" id="uniLogo"></a>
             <h1> CAT201 GROUP ASSIGNMENT</h1>
             <div class="nav-links">
                 <ul>
@@ -30,22 +30,24 @@
             </div>
         </nav>
 
-    <div class="text-box">
-        <p style="font-size: xx-large">Convert EXCEL to CSV</p>
-        <p>Please upload your file through button below, the information should be seperated by commas.</p>
-        <a href=""class="converter">UPLOAD</a>
-    </div>
-    </section>
-    <div class="footer">
-        <div class="inner_footer">
-            
-            <div style="font-size: 25px; text-align: center;" >CAT201-Group-Assignment <br>
+        <div class="text-box">
+            <h1>Convert EXCEL to CSV</h1>
+            <p>Please upload your file through button below, the information should be seperated by commas.</p>
+            <form method="post" action="script.php" enctype="multipart/form-data">
+                <input type="file" name="file[]" id="file" multiple />
+                <br /> <br />
+                <button type='submit' class="converter" name='submit' value='submit'> UPLOAD </button>
+        </form>
+        </div>
+    </header>
+    <footer class="menu">
+        <section class="box-container">
+            <div>CAT201-Group-Assignment <br />
             Universiti Sains Malaysia | USM
             </div>
-
-        </div>
-        
-    </div>
+        </section>    
+    </footer>  
+    
     
 </body>
 </html>
