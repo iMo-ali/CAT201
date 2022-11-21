@@ -5,7 +5,13 @@
     color: white;
 }
 
-.header{
+#uniLogo {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+header{
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(30, 29, 4, 0.7)),url(/Images/USM1.jpg);
@@ -14,7 +20,7 @@
     position:absolute;
 }
 
-.header h1{
+header h1{
     text-decoration: none;
     font-size: medium;
 }
@@ -120,10 +126,12 @@ nav{
     object-fit: cover;
 }
 
+
 .menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
 .menu .box-container .box{
@@ -136,13 +144,17 @@ nav{
     padding:1rem 0;
 }
 
-.footer{
-    width: 100vw;
-    display: block;
-    position: fixed;
+.menu .box-container .box img{
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
     bottom: 0;
     padding: 25px 0;
-    bottom: 0;
+    margin-top: 50px;
     background-color: #18181a;
 }
 
